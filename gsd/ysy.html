@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" >
     <meta name="renderer" content="webkit">
-    <title>Advantech Online Video</title>
+    <title>Online Video</title>
     <style>
         body{margin:0;text-align: center;}
         video{max-width: 1200px;width: 100%;}
@@ -38,7 +38,7 @@
   if(Hls.isSupported()) {
     var video = document.getElementById('video');
     var hls = new Hls();
-    hls.loadSource('http://hls01open.ys7.com/openlive/9785ba4d7d78485fafd2e63b82ee6deb.hd.m3u8');
+    hls.loadSource('https://hls01open.ys7.com/openlive/3ab7b0af47a24890bc8620fa6c65d83b.hd.m3u8');
     hls.attachMedia(video);
     hls.on(Hls.Events.MANIFEST_PARSED,function() {
         video.play();
